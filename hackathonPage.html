@@ -2,45 +2,63 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
-
   <title>PIP - Platform for Interdisciplinary Projects</title>
-
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
   <!-- Favicons -->
   <link href="img/logos/pipLOGOendversion.png" rel="icon">
 
-  <style>
-    .page-container {
-      display: flex;
-      justify-content: center;
-      margin: 100px;
-    }
+<style>
+.page-container {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+}
 
-    .page-content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  </style>
+.page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accordion {
+background-color: #eee;
+color: #444;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+transition: 0.4s;
+}
+
+.active, .accordion:hover {
+background-color: #ccc;
+}
+
+.panel {
+padding: 0 18px;
+background-color: white;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+}
+</style>
 </head>
-<body id="page-top">
+<body id="page-top" class="bg-light ">
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black; padding-top: 0; padding-bottom: 0;" id="mainNav">
       <div class="container">
@@ -62,25 +80,112 @@
       </div>
     </nav>
 
-   <div class="page-container">
-    <div class="page-content">
-      <div class="col-lg-8 mx-auto">
-        <h2>
-          Hackathon
-        </h2>
-        <p class="item-intro text-muted">
-          Hackathons are a chance to prove your skills in a team and in a short
-          time frame.
-        </p>
-        <img class="img-fluid d-block mx-auto" src="img/portfolio/hack-thumbnail.jpg" alt="">
-        <p>We will organise our own Hackathon as a chance to bring together participants around practical
-          sessions and develop chunks of our platform.
-          Also we will participate in other hackathons to get to know people and test and enjoy our skills
-          together.
-        </p>
-      </div>
+<div class="page-container">
+  <div class="page-content">
+    <div class="col-lg-8 mx-auto">
+      <h2 style="color: white; font-size: 45px; font-weight: bold; background-color: #fec810;display: flex;
+      justify-content: center;">
+          Hackathon 18.01.20 Saturday
+      </h2><br>
+      <p class="item-intro text-muted">
+        Hackathons are a chance to prove your skills in a team and in a short
+        time frame,12 hours for projects and learning.
+        Try out new technologies, collaborate with other developers, focus for 12 hours
+        straight, design / build around meaningful challenges.
+      </p>
+      <h3 style="font-size: 23px; padding: 15px;">How it works?</h3>
+      <ul class="a item-intro text-muted">
+          <li>pitch your own project</li>
+          <li>participate in challenges around the SDG’s (link to definition + overview).</li>
+          <li>work on pip challenges around our workshop/hackathon infrastructure</li>
+        </ul>
+      
+      <p class="item-intro text-muted">We will organise our own Hackathon as a chance to bring together participants around practical
+        sessions and develop chunks of our platform.
+        Also we will participate in other hackathons to get to know people and test and enjoy our skills
+        together.</p>
+    
+        <button class="accordion" style="font-size: 18px;"><strong>For whom?</strong></button>
+        <div class="panel ">
+            <ul class="a">
+                <li>Professionals</li>
+                <li>learners</li>
+                <li>Complete beginners</li>
+                <li>Students</li>
+              </ul>
+        </div> 
+        
+        <button class="accordion" style="font-size: 18px;"><strong>What to expect:</strong></button>
+        <div class="panel">
+            <ul class="a">
+                <li>Lunch and Dinner and Snacks and Drinks</li>
+                <li>3 challenge themes (around SDG’s)</li>
+                <li>Jury Awards three prices. (RaspberryPi kit, ticket to conference, certificate)</li>
+                <li>Time schedule: 10:30-22:30</li>
+                <li>Mini workshop</li>
+                <li>Mini unconference (link)</li>
+                <li>Up to 40 participants</li>
+                <li>WU Gründungszentrum</li> 
+            </ul>       
+        </div>
+        
+        <button class="accordion" style="font-size: 18px;"><strong>Costs:</strong></button>
+        <div class="panel">
+          <ul>
+            <li>20€ participation fee</li>
+            <li>50€ for supporters</li>
+            <li>5€ reduced fee</li>
+          </ul>
+        </div>  
+
+        <form
+        action="https://gmail.us20.list-manage.com/subscribe/post?u=75b6ffd5a64b83f7b564c1e5a&amp;id=3f13e4a16f"
+        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+        novalidate>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div class="input-group" style="display: flex;
+        justify-content: center;">
+          <div class="input-group-btn">
+            <button type="submit"
+            style="margin-bottom: -60px; margin-top: 20px;"
+            class=" btn-xl2 btn btn-primary btn-xl text-uppercase js-scroll-trigger" type="submit"><i class="fas fa-user-plus"></i> Sign up buttons and check challenges</button>
+          </div>
+        </div>
+      </form>
     </div>
+  </div>
 </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; Your Website 2019</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="mailto:pip.austria@gmail.com">
+                  <i class="fa fa-envelope"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -95,6 +200,21 @@
 <!-- Custom scripts for this template -->
 <script src="js/agency.min.js"></script>
 
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
     
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+</script>  
 </body>
 </html>
