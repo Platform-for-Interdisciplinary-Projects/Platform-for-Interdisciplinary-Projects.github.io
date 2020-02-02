@@ -2,174 +2,208 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
-
   <title>PIP - Platform for Interdisciplinary Projects</title>
-
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
   <!-- Favicons -->
   <link href="img/logos/pipLOGOendversion.png" rel="icon">
 
-  <style>
-    .btn:hover {
-      background-color: #fec810;
-    }
+<style>
+.page-container {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+}
 
-    .page-container {
-      display: flex;
-      justify-content: center;
-      margin: 100px;
-    }
+.page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accordion {
+background-color: #eee;
+color: #444;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+transition: 0.4s;
+}
 
-    .page-content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  </style>
+.active, .accordion:hover {
+background-color: #ccc;
+}
+
+.panel {
+padding: 0 18px;
+background-color: white;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+}
+</style>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black; padding-top: 0; padding-bottom: 0;" id="mainNav">
-        <div class="container">
-          <a class="navbar-brand js-scroll-trigger" href="#page-top"><img style='height: 70px'
-              src="./img/logos/pip_logo.png" /></a>
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-            aria-label="Toggle navigation">
-            Menu
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav text-uppercase ml-auto">
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="index.html"><strong>HOME</strong></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
-
-   <!-- workshop -->
-   <section class="bg-light page-section" id="about">
+<body id="page-top" class="bg-light ">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black; padding-top: 0; padding-bottom: 0;" id="mainNav">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Workshop Elements</h2>
-            <h3 class="section-subheading text-muted">On two workshop days we work with young people (14-20 years). We
-              need a space that can host 10-20 persons. We bring prepared micro-computers that just need a monitor,
-              keyboard and mouse. We bring a small server for learning resources and just need an internet connection to
-              connect to via Ethernet cable. We’re happy to collaborate with volunteers and also will bring our own
-              volunteers. At the end we want to evaluate our results through a questionnaire and receive feedback on how
-              to increase our efforts.
-            </h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/treasureHunt.jpeg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="subheading">Treasure Hunt</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Getting to know each other, and the project background in a fun and engaging
-                      way.</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/eLearning.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="subheading">Learning</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Watching online lectures together, with support from coaches. It will train
-                      English language comprehension, get one of the world’s best teachers into the classroom, and show
-                      how online courses work.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/projects.png" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="subheading">Projects</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Turning theory into practice with real-life projects in a team. Examples are
-                      developing a computer game, writing cryptographic programs, and automated analysis of texts.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/hack.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="subheading">Hackathon</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">We invite the participants from our different workshops and let them solve
-                      challenges over 12 hours. Participants can earn prices and present their works.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <h4>Be Part
-                    <br>Of Our
-                    <br>Story!</h4>
-                </div>
-              </li>
-            </ul>
-          </div>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img style='height: 70px'
+          src="./img/logos/pip weiss.png" /></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+          data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+          aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html"><strong>HOME</strong></a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+       </nav>
 
-    <!-- Bootstrap core JavaScript -->
-   <script src="vendor/jquery/jquery.min.js"></script>
-   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
- 
-   <!-- Plugin JavaScript -->
-   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
- 
-   <!-- Contact form JavaScript -->
-   <script src="js/jqBootstrapValidation.js"></script>
-   <script src="js/contact_me.js"></script>
- 
-   <!-- Custom scripts for this template -->
-   <script src="js/agency.min.js"></script>
+<div class="page-container">
+  <div class="page-content">
+    <div class="col-lg-8 mx-auto">
+      <h2 style="color: white; font-size: 45px; font-weight: bold; background-color: #fec810;display: flex;
+      justify-content: center;">
+          Coding Workshop in Kutaissi, Georgia
+          22 - 25 February          
+      </h2><br>
+      <p class="item-intro text-muted">
+        Coding is awesome!
+
+But starting on your own can be overwhelming.
+We as a Team of the PIP see it as our responsibility to spread our knowledge whereever we can!
+
+That's why we will give our first Workshop in Kutaissi. Aligned with the CS50 Harvard University program and edited for non-academics, we will guide them to their first steps into the "Hello World!"
+
+We will start from Scratch and accompany a group of students for three days.
 
 
+      </p>
+
+      <!-- <p class="item-intro text-muted">
+        People invited are coming from: 
+        20% data science,
+        30% developers,
+        50% others
+        You can invite friends or share a link to our <a href="https://www.eventbrite.co.uk/e/pip-hackathon-01-tickets-86268594689?aff=eemailordconf&utm_campaign=order_confirm&utm_medium=email&ref=eemailordconf&utm_source=eventbrite&utm_term=viewevent"><strong>Eventbrite sign-up page</strong></a>.
+      </p> -->
+      <br>
+      <br>
+
+      <button class="accordion" style="font-size: 18px;"><strong>Day 01</strong></button>
+      <div class="panel ">
+        <ul class="a"><br>
+            Caffeinated and freshly slept out, we send our teams off to earn their equipment for the next few days in a Treasure Hunt.
+ 
+            In the meantime, they will learn about the most important milestones in programming history and be optimally prepared for the following learning session
+             
+            For our first programming solution afterwards, we use Scratch - a drag-and-drop solution - which is easy to use and provides a fast track to success.
+            
+          <br>
+          <br>
+            <li>Introduction</li>
+            <li>Treasure hunt</li>
+            <li>Watch week-0 lecture</li>
+            <li>Pset0- scratch</li>
+        </ul>
+      </div>    
+      <button class="accordion" style="font-size: 18px;"><strong>Day 02</strong></button>
+      <div class="panel">
+          <ul class="a">
+            <br>
+            Did you get through yesterday all right?
+Awesome! Because on the second day, too, we put our foot down and check the results of our colleagues from the previous day with peer review.
+ 
+Then we go a step further and explain the basic principles of Python - the most popular programming language 2019 - or C - the mother of all languages!
+
+<br> <br> <li>Peer review pset-0</li>
+              <li>Watch week-01</li>
+              <li>Pset01-Python</li>
+              <li>Intro to hackathon</li>
+
+          </ul>       
+      </div>
+      <button class="accordion" style="font-size: 18px;"><strong>Day 03</strong></button>
+
+      <div class="panel">
+          <ul class="a">
+            <br>
+            Phew last day - once again bring up all reserves!
+            The workshop goal is to encourage you to realize your own projects and that's exactly what we will do together with you on the last day!
+            Our coding experts will be at your disposal all day long and will give you advice and support.
+             
+            Finally we will present our ideas and celebrate our progress !
+            
+            
+<br> <br> <li>Escape room</li>
+              <li>Challange picker</li>
+              <li>Desidn App</li>
+
+          </ul>       
+      </div> <br> <br> 
+      <p class="item-intro text-muted">
+          
+          You can't wait till it starts?
+          Take a look at <a href="https://cs50.harvard.edu/college/2020/spring/" target="_blank"><strong>the CS50 webpage </strong></a> and start today developing your skills for the jobs of tomorrow.
+          
+          
+        </p>
+
+  </div>
+</div>
+
+        
+ 
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Contact form JavaScript -->
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/agency.min.js"></script>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+</script>  
 </body>
 </html>
